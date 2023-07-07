@@ -32,14 +32,18 @@ public class Exercicio_Beecrowd_Og {
 
     //Método para ler o valor de l
     public static int lerL(int l){
-        l = LER.nextInt();
+        do { 
+            l = LER.nextInt();
+        } while (l < 0 || l > 5);
 
         return l;
     }
 
     //Método para ler o valor de r
     public static int lerR(int r){
-        r = LER.nextInt();
+        do{
+            r = LER.nextInt();
+        } while (r < 0 || r > 5);
 
         return r;
     }
